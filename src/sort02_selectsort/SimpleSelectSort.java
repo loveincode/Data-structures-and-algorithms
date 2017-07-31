@@ -3,21 +3,21 @@ package sort02_selectsort;
 public class SimpleSelectSort {
 	
 	/**
-     * ¼òµ¥Ñ¡ÔñÅÅĞò
-     * Ô­Àí£º´Óiµ½args.length-1£¬Ã¿´Îµü´ú½«iµ½args.length-1ÖĞ×îĞ¡£¨×î´ó£©µÄÄÇ¸öÊı½»»»µ½iµÄÎ»ÖÃ£¬È»ºói++£¬ÔÙÑ­»·
-     * @param array ´ıÅÅĞòµÄÊı×é
+     * ç®€å•é€‰æ‹©æ’åº
+     * åŸç†ï¼šä»iåˆ°args.length-1ï¼Œæ¯æ¬¡è¿­ä»£å°†iåˆ°args.length-1ä¸­æœ€å°ï¼ˆæœ€å¤§ï¼‰çš„é‚£ä¸ªæ•°äº¤æ¢åˆ°içš„ä½ç½®ï¼Œç„¶åi++ï¼Œå†å¾ªç¯
+     * @param array å¾…æ’åºçš„æ•°ç»„
      */
     public static void simpleSelectSort(int[] array){
-        //minLocÓÃÓÚ¼ÇÂ¼i+1µ½args.length-1Õâ¸öÇø¼äµÄ×îĞ¡ÖµµÄÏÂ±ê£¨i»áµİÔö£©£¬i±íÊ¾Òª½»»»µÄÎ»ÖÃ¡£
+        //minLocç”¨äºè®°å½•i+1åˆ°args.length-1è¿™ä¸ªåŒºé—´çš„æœ€å°å€¼çš„ä¸‹æ ‡ï¼ˆiä¼šé€’å¢ï¼‰ï¼Œiè¡¨ç¤ºè¦äº¤æ¢çš„ä½ç½®ã€‚
         for (int i=0,j=0,minLoc=0; i<array.length; i++) {
             minLoc = i;
-            for (j=i+1; j < array.length; j++) {//ÕÒ³öi+1µ½args.length-1Õâ¸öÇø¼äµÄ×îĞ¡ÖµµÄÏÂ±ê
+            for (j=i+1; j < array.length; j++) {//æ‰¾å‡ºi+1åˆ°args.length-1è¿™ä¸ªåŒºé—´çš„æœ€å°å€¼çš„ä¸‹æ ‡
                 if(array[j] < array[minLoc]){
                     minLoc = j;
                 }
             }
 
-            if(minLoc!=i){//Èç¹ûminLoc!=i£¬ËµÃ÷minLocÓĞ±ä»¯£¬¾Í½øĞĞ½»»»
+            if(minLoc!=i){//å¦‚æœminLoc!=iï¼Œè¯´æ˜minLocæœ‰å˜åŒ–ï¼Œå°±è¿›è¡Œäº¤æ¢
                 int temp = array[i];
                 array[i] = array[minLoc];
                 array[minLoc] = temp;
@@ -26,19 +26,19 @@ public class SimpleSelectSort {
     }
     
     public static void main(String[] args) {
-		// ĞèÒª½øĞĞÅÅĞòµÄÊı×é
+		// éœ€è¦è¿›è¡Œæ’åºçš„æ•°ç»„
 		int[] array = new int[] { 8, 3, 2, 1, 7, 4, 6, 5 };
-		// Êä³öÔ­Êı×éµÄÄÚÈİ
+		// è¾“å‡ºåŸæ•°ç»„çš„å†…å®¹
 		printResult(array);
-		// ¼òµ¥Ñ¡ÔñÅÅĞò²Ù×÷
+		// ç®€å•é€‰æ‹©æ’åºæ“ä½œ
 		simpleSelectSort(array);
-		// Êä³öÅÅĞòºóµÄÏà¹Ø½á¹û
+		// è¾“å‡ºæ’åºåçš„ç›¸å…³ç»“æœ
 		printResult(array);
 	}
 
 	/**
 	 * 
-	 * Êä³öÏàÓ¦Êı×éµÄ½á¹û
+	 * è¾“å‡ºç›¸åº”æ•°ç»„çš„ç»“æœ
 	 * 
 	 * @param array
 	 */

@@ -2,18 +2,18 @@ package sort01_insertsort;
 
 public class ShellSort {
 	/**
-     * Ï£¶ûÅÅĞò
-     * @param arrays ĞèÒªÅÅĞòµÄĞòÁĞ
+     * å¸Œå°”æ’åº
+     * @param arrays éœ€è¦æ’åºçš„åºåˆ—
      */
     public static void shellSort(int[] arrays){
         if(arrays == null || arrays.length <= 1){
             return;
         }
-        //ÔöÁ¿
+        //å¢é‡
         int incrementNum = arrays.length/2;
         while(incrementNum >=1){
             for(int i=0;i<arrays.length;i++){
-                //½øĞĞ²åÈëÅÅĞò
+                //è¿›è¡Œæ’å…¥æ’åº
                 for(int j=i;j<arrays.length-incrementNum;j=j+incrementNum){
                     if(arrays[j]>arrays	[j+incrementNum]){
                         int temple = arrays[j];
@@ -22,25 +22,25 @@ public class ShellSort {
                     }
                 }
             }
-            //ÉèÖÃĞÂµÄÔöÁ¿
+            //è®¾ç½®æ–°çš„å¢é‡
             incrementNum = incrementNum/2;
         }
     }
     
     public static void main(String[] args) {
-		// ĞèÒª½øĞĞÅÅĞòµÄÊı×é
+		// éœ€è¦è¿›è¡Œæ’åºçš„æ•°ç»„
 		int[] array = new int[] { 8, 3, 2, 1, 7, 4, 6, 5 };
-		// Êä³öÔ­Êı×éµÄÄÚÈİ
+		// è¾“å‡ºåŸæ•°ç»„çš„å†…å®¹
 		printResult(array);
-		// Ï£¶ûÅÅĞò²Ù×÷
+		// å¸Œå°”æ’åºæ“ä½œ
 		shellSort(array);
-		// Êä³öÅÅĞòºóµÄÏà¹Ø½á¹û
+		// è¾“å‡ºæ’åºåçš„ç›¸å…³ç»“æœ
 		printResult(array);
 	}
 
 	/**
 	 * 
-	 * Êä³öÏàÓ¦Êı×éµÄ½á¹û
+	 * è¾“å‡ºç›¸åº”æ•°ç»„çš„ç»“æœ
 	 * 
 	 * @param array
 	 */

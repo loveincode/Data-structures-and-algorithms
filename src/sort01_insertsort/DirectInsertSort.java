@@ -1,13 +1,13 @@
 package sort01_insertsort;
 
 /**
- * ÄÚ²¿ÅÅĞòËã·¨Ö®Ö±½Ó²åÈëÅÅĞò Ä¬ÈÏ°´ÕÕ´ÓĞ¡µ½´ó½øĞĞÅÅĞò²Ù×÷
+ * å†…éƒ¨æ’åºç®—æ³•ä¹‹ç›´æ¥æ’å…¥æ’åº é»˜è®¤æŒ‰ç…§ä»å°åˆ°å¤§è¿›è¡Œæ’åºæ“ä½œ
  */
 public class DirectInsertSort {
 
 	/**
-	 * Ö±½Ó²åÈëÅÅĞòµÄ·½·¨
-	 * @param array ĞèÒªÅÅĞòµÄĞòÁĞ
+	 * ç›´æ¥æ’å…¥æ’åºçš„æ–¹æ³•
+	 * @param array éœ€è¦æ’åºçš„åºåˆ—
 	 */
 	public static void directInsertSort(int[] array) {
 		for (int i = 0; i < array.length; i++) {
@@ -22,19 +22,19 @@ public class DirectInsertSort {
 	}
 	
 	public static void main(String[] args) {
-		// ĞèÒª½øĞĞÅÅĞòµÄÊı×é
+		// éœ€è¦è¿›è¡Œæ’åºçš„æ•°ç»„
 		int[] array = new int[] { 8, 3, 2, 1, 7, 4, 6, 5 };
-		// Êä³öÔ­Êı×éµÄÄÚÈİ
+		// è¾“å‡ºåŸæ•°ç»„çš„å†…å®¹
 		printResult(array);
-		// Ö±½Ó²åÈëÅÅĞò²Ù×÷
+		// ç›´æ¥æ’å…¥æ’åºæ“ä½œ
 		directInsertSort(array);
-		// Êä³öÅÅĞòºóµÄÏà¹Ø½á¹û
+		// è¾“å‡ºæ’åºåçš„ç›¸å…³ç»“æœ
 		printResult(array);
 	}
 
 	/**
 	 * 
-	 * Êä³öÏàÓ¦Êı×éµÄ½á¹û
+	 * è¾“å‡ºç›¸åº”æ•°ç»„çš„ç»“æœ
 	 * 
 	 * @param array
 	 */
