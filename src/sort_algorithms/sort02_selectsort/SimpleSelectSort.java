@@ -1,4 +1,4 @@
-package sort02_selectsort;
+package sort_algorithms.sort02_selectsort;
 
 public class SimpleSelectSort {
 	

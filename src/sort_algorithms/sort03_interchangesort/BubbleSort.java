@@ -1,4 +1,4 @@
-package sort03_interchangesort;
+package sort_algorithms.sort03_interchangesort;
 
 public class BubbleSort {
     

@@ -1,4 +1,4 @@
-package sort01_insertsort;
+package sort_algorithms.sort01_insertsort;
 
 /**
  * 内部排序算法之直接插入排序 默认按照从小到大进行排序操作

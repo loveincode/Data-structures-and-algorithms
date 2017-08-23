@@ -1,4 +1,4 @@
-package sort04mergesort;
+package sort_algorithms.sort04mergesort;
 
 public class MergeSort {
     public static void main(String[] args) {

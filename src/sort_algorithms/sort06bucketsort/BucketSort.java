@@ -1,4 +1,4 @@
-package sort06bucketsort;
+package sort_algorithms.sort06bucketsort;
 
 import java.util.ArrayList;
 import java.util.Collections;

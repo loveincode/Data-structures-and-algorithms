@@ -1,4 +1,4 @@
-package sort01_insertsort;
+package sort_algorithms.sort01_insertsort;
 
 public class ShellSort {
 	/**
