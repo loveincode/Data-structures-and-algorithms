@@ -16,9 +16,12 @@ public class Main {
 		tree.insert(8); //Z
 		/**
 		 * 
-		 * 				 G					5
-		 *           D       M			2		7
-		 *         A   F   H   Z	  1	  4   6   8
+		 * 				  G					5
+		 * 				/  \			   /  \
+		 *            D     M			  2	    7
+		 *           / \   / \ 			 / \   / \ 
+		 *          A   F H   Z	        1  4  6   8
+		 * 			   /				  /	
 		 * 			  E					 3
 		 * 
 		 * 前 根左右 GDAFEMHZ 52143768
