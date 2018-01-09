@@ -1,6 +1,8 @@
 package sort_algorithms.sort03_interchangesort;
 
 public class BubbleSort {
+	
+	// 交换排序  —— 冒泡排序
     
     public static void bubbleSort(int[] arrays){
         int len = arrays.length;

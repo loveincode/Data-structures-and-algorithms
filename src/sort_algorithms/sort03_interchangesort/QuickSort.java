@@ -2,13 +2,15 @@ package sort_algorithms.sort03_interchangesort;
 
 public class QuickSort {
     
+	// 交换排序  —— 快速排序
     
     public static void quickSort(int[] arrays){        
-        quick(arrays);  
-        for(int i=0;i<arrays.length;i++)  
-           System.out.println(arrays[i]);  
+        if (arrays.length > 0) {    //查看数组是否为空     
+            _quickSort(arrays, 0, arrays.length - 1);     
+        } 
     }  
 
+    //获取中间值 并排序操作
     public static int getMiddle(int[] list, int low, int high) {     
         int tmp = list[low];    //数组的第一个作为中轴     
         while (low < high) {     
@@ -21,11 +23,13 @@ public class QuickSort {
             }     
             list[high] = list[low];   //比中轴大的记录移到高端     
         }     
-        list[low] = tmp;              //中轴记录到尾     
+        list[low] = tmp;              //记录到数组第一个值
+        printResult(list);
         return low;                   //返回中轴的位置     
     }    
       
-    public static void _quickSort(int[] list, int low, int high) {     
+    public static void _quickSort(int[] list, int low, int high) {  
+    	
         if (low < high) {     
             int middle = getMiddle(list, low, high);  //将list数组进行一分为二     
             _quickSort(list, low, middle - 1);        //对低字表进行递归排序     
@@ -33,15 +37,9 @@ public class QuickSort {
         }     
     }   
       
-    public static void quick(int[] a2) {     
-        if (a2.length > 0) {    //查看数组是否为空     
-            _quickSort(a2, 0, a2.length - 1);     
-        }     
-    }   
     
     public static void main(String[] args) {
-        int[] array = new int[] { 8, 3, 2, 1, 7, 4, 6, 5 };
-        printResult(array);
+        int[] array = new int[] { 49, 38, 65, 97, 76, 13, 27, 49};
         quickSort(array);
         printResult(array);
     }

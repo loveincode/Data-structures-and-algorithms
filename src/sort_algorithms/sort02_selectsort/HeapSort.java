@@ -3,6 +3,18 @@ package sort_algorithms.sort02_selectsort;
 import java.util.Arrays;
 
 public class HeapSort {
+	
+	//选择排序  —— 堆排序
+	
+	/*
+	 * 利用堆积树（堆）这种数据结构所设计的一种排序算法
+	 * 
+	 * 堆分为大根堆和小根堆，是完全二叉树.
+	 * 
+	 * 大根堆的要求是每个节点的值都不大于其父节点的值，即A[PARENT[i]] >= A[i]。
+	 * 在数组的非降序排序中，需要使用的就是大根堆，因为根据大根堆的要求可知，最大的值一定在堆顶。
+	 */
+	
 	public static void main(String[] args) {
         int[] a={ 8, 3, 2, 1, 7, 4, 6, 5 };
         int arrayLength=a.length;  
@@ -46,6 +58,7 @@ public class HeapSort {
             }
         }
     }
+    
     //交换
     private static void swap(int[] data, int i, int j) {  
         int tmp=data[i];  

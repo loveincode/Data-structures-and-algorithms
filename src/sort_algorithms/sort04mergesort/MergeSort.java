@@ -1,16 +1,15 @@
 package sort_algorithms.sort04mergesort;
 
 public class MergeSort {
+	
+	// 归并排序
+	
     public static void main(String[] args) {
         int[] data = new int[] { 8, 3, 2, 1, 7, 4, 6, 5 };
         print(data);
-        mergeSort(data);
+        sort(data, 0, data.length - 1);
         System.out.println("排序后的数组：");
         print(data);
-    }
-
-    public static void mergeSort(int[] data) {
-        sort(data, 0, data.length - 1);
     }
 
     public static void sort(int[] data, int left, int right) {
@@ -40,6 +39,7 @@ public class MergeSort {
      *            右数组最后一个元素的索引
      */
     public static void merge(int[] data, int left, int center, int right) {
+    	print(data);
         // 临时数组
         int[] tmpArr = new int[data.length];
         // 右数组第一个元素索引
@@ -68,6 +68,7 @@ public class MergeSort {
         while (tmp <= right) {
             data[tmp] = tmpArr[tmp++];
         }
+        //print(data);
     }
 
     public static void print(int[] data) {

@@ -1,6 +1,9 @@
 package sort_algorithms.sort01_insertsort;
 
 public class ShellSort {
+	
+	// 插入排序  —— 希尔排序
+	
 	/**
      * 希尔排序
      * @param arrays 需要排序的序列

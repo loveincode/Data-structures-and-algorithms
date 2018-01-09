@@ -5,6 +5,8 @@ package sort_algorithms.sort01_insertsort;
  */
 public class DirectInsertSort {
 
+	// 插入排序  —— 直接插入排序
+	
 	/**
 	 * 直接插入排序的方法
 	 * @param array 需要排序的序列
