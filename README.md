@@ -45,7 +45,7 @@ k-v
 8. 图
 
 BFS
-DFS
+DFS [BFS和DFS优先搜索算法](http://www.cnblogs.com/pengyingh/articles/2396432.html)
 
 9. 排序
 
