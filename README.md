@@ -28,7 +28,7 @@
 
 6. 树
 
-二叉树
+二叉树 [二叉树实现 及三种遍历](https://github.com/loveincode/Data-structures-and-algorithms/blob/master/src/data_structures/data06_tree/Binarytree/BinaryTree.java)
 　　前序遍历
 　　中序遍历
 　　后序遍历
@@ -45,7 +45,7 @@ k-v
 8. 图
 
 BFS
-DFS
+DFS [BFS和DFS优先搜索算法](http://www.cnblogs.com/pengyingh/articles/2396432.html)
 
 9. 排序
 
