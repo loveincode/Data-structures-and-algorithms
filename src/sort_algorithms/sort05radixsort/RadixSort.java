@@ -4,12 +4,12 @@ import java.util.Arrays;
 
 public class RadixSort {
 	
-	// 基数排序
+	// 基数排序 O (nlog(r)m)  r为所采取的基数，而m为堆数 稳定性
 	
     public static void main(String[] args) {  
         int[] data = new int[] { 8, 3, 2, 1, 7, 4, 6, 5 };  
         print(data);  
-        radixSort(data, 10, 4);  
+        radixSort(data, 21, 1);  
         System.out.println("排序后的数组：");  
         print(data);  
     }  

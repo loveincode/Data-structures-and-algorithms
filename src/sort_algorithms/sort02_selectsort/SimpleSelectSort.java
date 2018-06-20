@@ -5,7 +5,7 @@ public class SimpleSelectSort {
 	//选择排序  —— 简单选择排序
 	
 	/**
-     * 简单选择排序
+     * 简单选择排序 O(n2) 不稳定
      * 原理：从i到args.length-1，每次迭代将i到args.length-1中最小（最大）的那个数交换到i的位置，然后i++，再循环
      * @param array 待排序的数组
      */

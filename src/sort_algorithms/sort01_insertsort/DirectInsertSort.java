@@ -8,11 +8,11 @@ public class DirectInsertSort {
 	// 插入排序  —— 直接插入排序
 	
 	/**
-	 * 直接插入排序的方法
+	 * 直接插入排序的方法 稳定 O(n2) O(1)
 	 * @param array 需要排序的序列
 	 */
 	public static void directInsertSort(int[] array) {
-		for (int i = 0; i < array.length; i++) {
+		for (int i = 1; i < array.length; i++) {
 			for (int j = 0; j < i; j++) {
 				if (array[i] < array[j]) {
 					int temp = array[i];

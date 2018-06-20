@@ -5,7 +5,7 @@ public class ShellSort {
 	// 插入排序  —— 希尔排序
 	
 	/**
-     * 希尔排序
+     * 希尔排序 不稳定 O(n^2) O(1)
      * @param arrays 需要排序的序列
      */
     public static void shellSort(int[] arrays){
