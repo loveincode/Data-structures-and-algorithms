@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class HeapSort {
 	
-	//选择排序  —— 堆排序
+	//选择排序  —— 堆排序 不稳定
 	
 	/*
 	 * 利用堆积树（堆）这种数据结构所设计的一种排序算法
@@ -28,7 +28,7 @@ public class HeapSort {
         }  
     }
 	
-	//对data数组从0到lastIndex建大顶堆
+	//对data数组  0 - lastIndex 建大顶堆
     public static void buildMaxHeap(int[] data, int lastIndex){
          //从lastIndex处节点（最后一个节点）的父节点开始 
         for(int i=(lastIndex-1)/2;i>=0;i--){
@@ -38,7 +38,7 @@ public class HeapSort {
             while(k*2+1<=lastIndex){
                 //k节点的左子节点的索引 
                 int biggerIndex=2*k+1;
-                //如果biggerIndex小于lastIndex，即biggerIndex+1代表的k节点的右子节点存在
+                //k节点的右子节点存在         						如果biggerIndex小于lastIndex，即biggerIndex+1代表的
                 if(biggerIndex<lastIndex){  
                     //若果右子节点的值较大  
                     if(data[biggerIndex]<data[biggerIndex+1]){  
@@ -46,7 +46,7 @@ public class HeapSort {
                         biggerIndex++;  
                     }  
                 }  
-                //如果k节点的值小于其较大的子节点的值  
+                //如果k节点的值小于其 较大的子节点的值  
                 if(data[k]<data[biggerIndex]){  
                     //交换他们  
                     swap(data,k,biggerIndex);  
