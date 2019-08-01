@@ -38,7 +38,7 @@ public class BinarySort {
 		binarySort(a);
 		
 		for (int i = 0; i < 10; i++) {
-			System.out.printf("%d", a[i]);
+			System.out.printf("%d,", a[i]);
 		}
 	}
 }
