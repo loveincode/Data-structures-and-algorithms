@@ -1,15 +1,21 @@
 package sort_algorithms.sort04mergesort;
 
+import common.CommonUtils;
+
 public class MergeSort {
-	
-	// 归并排序 O(n log n) 稳定 O（n)
-	
+
+    /**
+     * 归并排序 O(n log n) 稳定 O（n)
+     *
+     * @param args
+     */
+
     public static void main(String[] args) {
-        int[] data = new int[] { 8, 3, 2, 1, 7, 4, 6, 5 };
-        print(data);
+        int[] data = new int[]{8, 3, 2, 1, 7, 4, 6, 5};
+        CommonUtils.printResult(data);
         sort(data, 0, data.length - 1);
         System.out.println("排序后的数组：");
-        print(data);
+        CommonUtils.printResult(data);
     }
 
     public static void sort(int[] data, int left, int right) {
@@ -23,21 +29,17 @@ public class MergeSort {
         sort(data, center + 1, right);
         // 合并
         merge(data, left, center, right);
-        System.out.println("left:"+left+"center:"+center+"right:"+right);
-        print(data);
+        System.out.println("left:" + left + "center:" + center + "right:" + right);
+        CommonUtils.printResult(data);
     }
 
     /**
      * 将两个数组进行归并，归并前面2个数组已有序，归并后依然有序
-     * 
-     * @param data
-     *            数组对象
-     * @param left
-     *            左数组的第一个元素的索引
-     * @param center
-     *            左数组的最后一个元素的索引，center+1是右数组第一个元素的索引
-     * @param right
-     *            右数组最后一个元素的索引
+     *
+     * @param data   数组对象
+     * @param left   左数组的第一个元素的索引
+     * @param center 左数组的最后一个元素的索引，center+1是右数组第一个元素的索引
+     * @param right  右数组最后一个元素的索引
      */
     public static void merge(int[] data, int left, int center, int right) {
         // 临时数组
@@ -70,10 +72,4 @@ public class MergeSort {
         }
     }
 
-    public static void print(int[] data) {
-        for (int i = 0; i < data.length; i++) {
-            System.out.print(data[i] + "\t");
-        }
-        System.out.println();
-    }
 }

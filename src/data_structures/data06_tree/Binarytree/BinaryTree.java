@@ -102,7 +102,7 @@ public class BinaryTree {
 	}
 	
 	/**
-	 * 前序遍历 左右根
+	 * 后序遍历 左右根
 	 * 
 	 * @param treeNode
 	 */

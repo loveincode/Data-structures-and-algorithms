@@ -1,12 +1,12 @@
 package sort_algorithms.sort02_selectsort;
 
+import common.CommonUtils;
+
 import java.util.Arrays;
 
 public class HeapSort {
 	
-	//选择排序  —— 堆排序 不稳定
-	
-	/*
+	/** 选择排序  —— 堆排序 不稳定
 	 * 利用堆积树（堆）这种数据结构所设计的一种排序算法
 	 * 
 	 * 堆分为大根堆和小根堆，是完全二叉树.
@@ -23,8 +23,8 @@ public class HeapSort {
             //建堆  
             buildMaxHeap(a,arrayLength-1-i);  
             //交换堆顶和最后一个元素  
-            swap(a,0,arrayLength-1-i);  
-            System.out.println(Arrays.toString(a));  
+            swap(a,0,arrayLength-1-i);
+            CommonUtils.printResult(a);
         }  
     }
 	

@@ -1,17 +1,23 @@
 package sort_algorithms.sort05radixsort;
 
+import common.CommonUtils;
+
 import java.util.Arrays;
 
 public class RadixSort {
-	
-	// 基数排序 O (nlog(r)m)  r为所采取的基数，而m为堆数 稳定性
+
+    /**
+     * 基数排序 O (nlog(r)m)  r为所采取的基数，而m为堆数 稳定性
+     * @return
+     */
+
 	
     public static void main(String[] args) {  
-        int[] data = new int[] { 8, 3, 2, 1, 7, 4, 6, 5 };  
-        print(data);  
+        int[] data = new int[] { 8, 3, 2, 1, 7, 4, 6, 5 };
+        CommonUtils.printResult(data);
         radixSort(data, 21, 1);  
-        System.out.println("排序后的数组：");  
-        print(data);  
+        System.out.println("排序后的数组：");
+        CommonUtils.printResult(data);
     }  
   
     public static void radixSort(int[] data, int radix, int d) {  
@@ -46,13 +52,6 @@ public class RadixSort {
             rate *= radix;  
         }  
   
-    }  
-  
-    public static void print(int[] data) {  
-        for (int i = 0; i < data.length; i++) {  
-            System.out.print(data[i] + "\t");  
-        }  
-        System.out.println();  
-    }  
+    }
   
 }
